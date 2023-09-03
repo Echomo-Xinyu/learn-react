@@ -8,13 +8,28 @@ document.getElementById("member-button").addEventListener("click", function () {
       return response.json();
     })
     .then((members) => {
-      let html = '';
+      // a more secure approach compared with commented section
+      
+      const fragment = document.createDocumentFragment();
 
       members.forEach((member) => {
-        html = html + `<img src="${member.avatar_url}" width="150"/>`;
-      });
+        const img = document.createElement("img");
+        img.src = member.avatar_url;
+        img.width = 150;
 
-      document.getElementById("results").innerHTML = DOMPurify.sanitize(html); // prevent XSS attack from external sites
+        fragment.append(img);
+      })
+
+      document.getElementById("results").innerHTML = "";
+      document.getElementById("results").append(fragment);
+      
+      // let html = '';
+
+      // members.forEach((member) => {
+      //   html = html + `<img src="${member.avatar_url}" width="150"/>`;
+      // });
+
+      // document.getElementById("results").innerHTML = DOMPurify.sanitize(html); // prevent XSS attack from external sites
     });
 });
 

@@ -5,7 +5,7 @@ All asynchronous requests are processed after the synchronous requests are compl
 ```javascript
 console.log(1)
 setTimeout(() => {
-	console.log(2)
+  console.log(2)
 }, 2)
 console.log(3)
 ...
