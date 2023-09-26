@@ -10,3 +10,6 @@
 [submodule "quiz-1"]
 	path = quiz-1
 	url = https://github.com/ITP-404-Fall-2023/quiz-1-Echomo-Xinyu.git
+[submodule "assignment-4-Echomo-Xinyu"]
+	path = assignment-4-Echomo-Xinyu
+	url = https://github.com/ITP-404-Fall-2023/assignment-4-Echomo-Xinyu.git
