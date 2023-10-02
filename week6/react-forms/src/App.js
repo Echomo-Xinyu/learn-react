@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.css";
 import { useState } from "react";
-import Input from "./Input.js";
+import Input from "./input.js";
 
 function App() {
   const [phone, setPhone] = useState("");
