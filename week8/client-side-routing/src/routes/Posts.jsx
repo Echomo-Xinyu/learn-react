@@ -1,11 +1,11 @@
-import { useLoaderData } from "react-router-dom"
+import { useLoaderData } from "react-router-dom";
 
-export default function Posts() {
+export default function Post() {
   const post = useLoaderData();
-  console.log(post);
+
   return (
-    <div>
-      {/* <h1>{post.title}</h1>
+    <div className="post-page">
+      <h1>{post.title}</h1>
       <h4>By {post.user.name}</h4>
 
       <p>{post.body}</p>
@@ -15,7 +15,7 @@ export default function Posts() {
         {post.comments.map((comment) => {
           return <li key={comment.id}>{comment.body}</li>;
         })}
-      </ol> */}
+      </ol>
     </div>
-  )
+  );
 }
