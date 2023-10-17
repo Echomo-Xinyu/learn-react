@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "title": "Post 0 (updated by David)",
+      "body": "Updated body",
+      "userId": "0",
+      "categoryId": "0",
+      "id": "0"
+    },
+    {
+      "title": "My new post",
+      "body": "My post body",
+      "userId": "0",
+      "id": "Gl12MkS"
+    }
+  ],
+  "categories": [
+    {
+      "id": "0",
+      "name": "Technology"
+    }
+  ],
+  "comments": [
+    {
+      "id": "0",
+      "body": "Comment 0",
+      "postId": "0"
+    }
+  ],
+  "users": [
+    {
+      "id": "0",
+      "name": "David Tang"
+    },
+    {
+      "id": "1",
+      "name": "Xinyu"
+    }
+  ]
+}
