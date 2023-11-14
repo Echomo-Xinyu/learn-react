@@ -14,14 +14,14 @@ export default function StarRating(props) {
           props.onStarClick(i);
         }}
       >
-        {props.renderStar(props.rating >= i)}
+        {props.children(props.rating >= i)}
       </button>
     );
   }
   return (
     <>
-      {/* children is keyword that cannot be changed to another name */}
-      {props.children}
+      {/* children is keyword that cannot be changed to another name
+      {props.children} */}
       {stars}
     </>
   );

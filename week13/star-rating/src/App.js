@@ -8,12 +8,14 @@ export default function App() {
   const [rating, setRating] = useState(3);
   return (
     <div>
+      <p>Please select your rating</p>
       <StarRating
         rating={rating}
         onStarClick={(selectedRating) => {
           setRating(selectedRating);
         }}
-        renderStar={(isStarFilled) => {
+      >
+        {(isStarFilled) => {
           return (
             <FontAwesomeIcon
               icon={faStar}
@@ -22,8 +24,6 @@ export default function App() {
             />
           );
         }}
-      >
-        <p>Please select your rating</p>
       </StarRating>
     </div>
   );
