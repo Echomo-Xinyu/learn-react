@@ -4,6 +4,9 @@ import { faStar } from "@fortawesome/free-solid-svg-icons";
 export default function StarRating(props) {
   const stars = [];
 
+  const emptyColor = props.emptyColor || '#eee'
+  const filledColor = props.filledColor || 'yellow'
+
   for (let i = 1; i <= 5; i++) {
     stars.push(
       <button
@@ -17,7 +20,7 @@ export default function StarRating(props) {
         <FontAwesomeIcon
           icon={faStar}
           size="5x"
-          color={props.rating >= i ? "red" : "grey"}
+          color={props.rating >= i ? filledColor : emptyColor}
         />
       </button>
     );
