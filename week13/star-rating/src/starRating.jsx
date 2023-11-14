@@ -1,4 +1,3 @@
-
 export default function StarRating(props) {
   const stars = [];
 
@@ -19,5 +18,11 @@ export default function StarRating(props) {
       </button>
     );
   }
-  return <>{stars}</>;
+  return (
+    <>
+      {/* children is keyword that cannot be changed to another name */}
+      {props.children}
+      {stars}
+    </>
+  );
 }

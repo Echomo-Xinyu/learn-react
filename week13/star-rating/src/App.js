@@ -22,7 +22,9 @@ export default function App() {
             />
           );
         }}
-      />
+      >
+        <p>Please select your rating</p>
+      </StarRating>
     </div>
   );
 }
