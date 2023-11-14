@@ -1,11 +1,9 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faStar } from "@fortawesome/free-solid-svg-icons";
 
 export default function StarRating(props) {
   const stars = [];
 
-  const emptyColor = props.emptyColor || '#eee'
-  const filledColor = props.filledColor || 'yellow'
+  // const emptyColor = props.emptyColor || '#eee'
+  // const filledColor = props.filledColor || 'yellow'
 
   for (let i = 1; i <= 5; i++) {
     stars.push(
@@ -17,11 +15,7 @@ export default function StarRating(props) {
           props.onStarClick(i);
         }}
       >
-        <FontAwesomeIcon
-          icon={faStar}
-          size="5x"
-          color={props.rating >= i ? filledColor : emptyColor}
-        />
+        {props.renderStar(props.rating >= i)}
       </button>
     );
   }
