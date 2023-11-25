@@ -22,3 +22,6 @@
 [submodule "assignment-7-Echomo-Xinyu"]
 	path = assignment-7-Echomo-Xinyu
 	url = https://github.com/ITP-404-Fall-2023/assignment-7-Echomo-Xinyu.git
+[submodule "assignment-8-Echomo-Xinyu"]
+	path = assignment-8-Echomo-Xinyu
+	url = https://github.com/ITP-404-Fall-2023/extra-credit-assignment-Echomo-Xinyu.git
