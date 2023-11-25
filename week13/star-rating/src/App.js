@@ -11,6 +11,7 @@ export default function App() {
       <p>Please select your rating</p>
       <StarRating
         rating={rating}
+        total={5}
         onStarClick={(selectedRating) => {
           setRating(selectedRating);
         }}
