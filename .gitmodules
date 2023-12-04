@@ -25,3 +25,6 @@
 [submodule "assignment-8-Echomo-Xinyu"]
 	path = assignment-8-Echomo-Xinyu
 	url = https://github.com/ITP-404-Fall-2023/extra-credit-assignment-Echomo-Xinyu.git
+[submodule "final-project"]
+	path = final-project
+	url = https://github.com/Echomo-Xinyu/stackoverflow-lite.git
